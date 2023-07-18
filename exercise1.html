@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piet Mondrian - Composition No. 3</title>
+  <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon">k
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .container {
+
+
+      height: 748px;
+      width: 748px;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3 ,1fr);
+      background-color: black;
+
+      
+    }
+    .red
+    {
+      height: 414px;
+      width: 320px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background-color: red;
+      
+    }
+    .w1, .w2, .w3, .w4, .w5
+    {
+      background-color: whitesmoke;
+    } 
+    .w1
+    {
+      height: 414px;
+      width: 419px;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .w2
+    {
+      height: 296px;
+      width: 320px;
+    }
+    .w3
+    {
+      width: 360px;
+    }
+    .w4
+    {
+
+    }
+    .w5{
+
+     
+      height: 239px;
+
+      width: 50px;
+
+      order: 1;
+
+    }
+    .w5b
+    {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .blue
+    {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 2;
+      background-color: darkblue;
+      height: 130px;
+      width: 50px;
+      border-bottom: 10px solid black;
+
+    }
+    .by
+    {
+      display: flex;
+      flex-direction: row;
+      gap: 9px;
+    }
+    .yellow
+    {
+      
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+
+      background-color: yellow;
+      width: 198px;
+    }
+    .black
+    {
+      
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      background-color: black;
+      width: 153px;
+      height: 20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item w1"></div>
+    <div class="item w2"></div>
+    <div class="item w3"></div>
+    
+    <div class="w5b">
+      <div class="item w5"></div>
+    <div class="item blue"></div>
+    </div>
+    <div class="item w4"></div>
+    <div class="by">
+      <div class="item yellow"></div>
+      <div class="item black">black</div>
+    </div>
+    
+    
+  </div>
+</body>
+
+</html>
